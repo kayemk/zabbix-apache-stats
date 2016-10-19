@@ -51,6 +51,7 @@ def setLogLevel(loglevel):
 def zbx_fail(err):
     logger.critical("%s", err)
     print "ZBX_NOTSUPPORTED"
+    print err
     sys.exit(1)
 
 def fetchURL(url, user = None, passwd = None):
